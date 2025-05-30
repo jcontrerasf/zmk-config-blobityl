@@ -1,0 +1,17 @@
+#include "blobityl.dtsi"
+
+&kscan0 {
+  col-gpios
+    = <&gpio1 6  GPIO_ACTIVE_HIGH> //A (Pulgar)
+    , <&gpio0 9  GPIO_ACTIVE_HIGH> //B
+    , <&gpio1 11 GPIO_ACTIVE_HIGH> //C (Indice)
+    , <&gpio1 13 GPIO_ACTIVE_HIGH> //D (Medio)
+    , <&gpio1 15 GPIO_ACTIVE_HIGH> //E (Anular)
+    , <&gpio1 0  GPIO_ACTIVE_HIGH> //F (Meñique)
+    , <&gpio1 4  GPIO_ACTIVE_HIGH> //G
+    ;
+};
+
+&left_encoder {
+  status = "okay";
+};

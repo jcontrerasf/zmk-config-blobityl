@@ -1,0 +1,5 @@
+config SHIELD_BLOBITYL_LEFT
+    def_bool $(shields_list_contains,blobityl_left)
+
+config SHIELD_BLOBITYL_RIGHT
+    def_bool $(shields_list_contains,blobityl_right)
