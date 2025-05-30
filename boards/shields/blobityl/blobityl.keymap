@@ -36,7 +36,7 @@
                                                     &kp LALT   &kp RALT    &kp LBKT         &kp BSPC    &kp DEL    &kp RSHIFT
                                                     &kp SPACE  &kp LGUI                                 &kp ENTER  &kp SPACE
       >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+      sensor-bindings = <&inc_dec_kp UP DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     extra_layer { // Layer 1
