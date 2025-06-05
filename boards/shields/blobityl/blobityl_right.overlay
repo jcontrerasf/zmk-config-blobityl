@@ -6,7 +6,6 @@
 
 &kscan0 {
   col-gpios
-  //INVERTIRRRRR
     = <&gpio1 6  GPIO_ACTIVE_HIGH> //A (Pulgar)
     , <&gpio0 9  GPIO_ACTIVE_HIGH> //B
     , <&gpio1 11 GPIO_ACTIVE_HIGH> //C (Indice)
