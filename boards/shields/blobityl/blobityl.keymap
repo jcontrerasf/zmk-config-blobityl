@@ -6,7 +6,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
-//#define ZMK_MOUSE_SCRL_VAL 100
 
 / {
   behaviors {
@@ -21,6 +20,20 @@
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
       bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+      tap-ms = <20>;
+    };
+
+    move_up_down: behavior_sensor_rotate_mouse_move_up_down {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
+      tap-ms = <20>;
+    };
+
+    move_left_right: behavior_sensor_rotate_mouse_move_left_right {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
       tap-ms = <20>;
     };
   };
@@ -59,7 +72,7 @@
                                                     &kp LALT   &kp RALT    &kp LBKT         &kp BSPC    &kp DEL    &kp RSHIFT
                                                     &kp SPACE  &kp LGUI                                 &kp ENTER  &kp SPACE
       >;
-      sensor-bindings = <&scroll_up_down &scroll_left_right>;
+      sensor-bindings = <&scroll_left_right &scroll_up_down>;
     };
 
     extra_layer { // Layer 1
@@ -74,6 +87,7 @@
                                                     &trans   &trans    &trans              &trans    &trans    &trans
                                                     &trans   &trans                                   &trans   &trans
       >;
+      sensor-bindings = <&move_left_right &move_up_down>;
     };
   };
  };
