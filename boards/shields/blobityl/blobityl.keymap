@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 5000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
@@ -67,7 +67,7 @@
         &kp GRAVE   &kp N1      &kp N2     &kp N3      &kp N4     &kp N5                                  &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS
         &kp ESC     &kp Q       &kp W      &kp E       &kp R      &kp T                                   &kp Y     &kp U     &kp I      &kp O     &kp P      &kp LBKT
         &kp LSHFT   &kp A       &kp S      &kp D       &kp F      &kp G                                   &kp H     &kp J     &kp K      &kp L     &kp SEMI   &kp UP
-        &kp LCTRL   &kp Z       &kp X      &kp C       &kp V      &kp B                                   &kp N     &kp M     &kp COMMA  &kp DOT   &kp DOWN   &kp RIGHT
+        &kp LCTRL   &kp Z       &kp X      &kp C       &kp V      &lt 1 B                                   &kp N     &kp M     &kp COMMA  &kp DOT   &kp DOWN   &kp RIGHT
                                 &kp NUBS   &lt 1 TAB                                                                          &kp FSLH   &kp LEFT
                                                     &kp LALT   &kp RALT    &kp LBKT         &kp BSPC    &kp DEL    &kp RSHIFT
                                                     &kp SPACE  &kp LGUI                                 &kp ENTER  &kp SPACE
