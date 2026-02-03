@@ -84,8 +84,8 @@
         &trans     &none   &none       &none       &studio_unlock    &bt BT_SEL 2                          &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp C_VOL_DN  &kp END       &kp RBKT
         &trans     &none   &kp CAPS    &none       &none    &bt BT_SEL 3                                   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_DOT    &kp APOS      &kp BSLH
                            &kp KP_NLCK &trans                                                                            &kp KP_N0     &kp HOME
-                                                    &BSPC    &DEL      &trans              &trans    &trans    &trans
-                                                    &trans   &ENTER                                   &trans   &trans
+                                                    &kp BSPC &kp DEL    &trans              &trans    &trans    &trans
+                                                    &trans   &kp ENTER                                 &trans   &trans
       >;
       sensor-bindings = <&move_left_right &move_up_down>;
     };
@@ -106,11 +106,11 @@
     };
 
     extra1 {
-            status = "reserved";
+      status = "reserved";
     };
 
     extra2 {
-        status = "reserved";
+      status = "reserved";
     };
   };
  };
